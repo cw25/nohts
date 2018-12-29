@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Parisienne');
+
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f7eee2;
+}
+
+
+#brand {
+    font-family: 'Parisienne', serif;
+    font-size: 72px;
+    margin-top: 20px;
+}
+
+
+.jumbotron {
+    background-color: #fff;
+    border: 1px dotted #ccc;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+form textarea {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+#instructions {
+    padding-bottom: 30px;
+}
+
+
+.hint {
+    font-style: italic;
+    color: #666;
+}
+
+
+#noht_highlighter_pane {
+    font-family: 'Roboto Mono', monospace;
+    white-space: pre;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fff;
+    border: 1px dotted #ccc;
+    border-radius: 5px;
+    
+    /* Disabled until we receive something to annotate */
+    display: none;
+}
+
+
+#noht_preview_pane {
+    font-family: 'Roboto Mono', monospace;
+    white-space: pre;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#noht_annotation_text_editor {
+    padding: 30px;
+}
+
+
+#noht_submit_pane {
+    margin-top: 20px;
+}
+
+
+#advance_to_annotator {
+    display: none;
+}
+
+
+#advance_to_finalize {
+    display: none;
+}
+
+
+.highlight_close_handle {
+    font-size: xx-small;
+    float: right;
+    display: inline-block;
+    padding: 1px;
+    border-radius: 5px;
+    background: #fff;
+    color: #444;
+}
+
+
+.highlight_close_handle:hover {
+    background: #222;
+    color: #fff;
+}
+
+
+.highlight_box {
+    border: 2px solid rgba(133, 12, 255, 0.85);
+    position: absolute;
+    background-color: rgba(133, 12, 255, 0.3);
+    color: #000;
+    border-radius: 5px;
+}
+
+
+.annotation_box {
+    font-family: 'Merriweather', serif;
+    font-size: smaller;
+    padding: 2px;
+    border: 2px solid rgba(255, 133, 12, 0.85);
+    position: absolute;
+    background-color: rgba(255, 133, 12, 0.3);
+    color: #000;
+    border-radius: 5px;
+    min-width: 100px;
+    width: auto;
+    min-height: 28px;
+    height: auto;
+}
+
+
+.selected_annotation {
+    border: 2px solid black;
+}
+
+
+.connector_line {
+    padding: 0px;
+    margin: 0px;
+    background-color: #6D757D;
+    line-height: 1px;
+    position: absolute;
+}

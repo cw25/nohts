@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Nohts - Explain Things Quickly</title>
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    
+    <link href="css/nohts.css" rel="stylesheet">
+    <script type="text/javascript" src="js/nohts.js"></script>
+    <script type="text/javascript" src="js/html2canvas.min.js"></script>
+</head>
+
+
+
+
+<body>
+    <div class="container">
+        <div id="brand">
+            Nohts🐇
+        </div>
+        
+        <div class="jumbotron" id="noht_jumbotron" border=1px>
+            <form>
+                <p id="instructions">
+                    Enter some text or LaTeX that you want to annotate:
+                    <br />
+                    <span class="hint">Hint: Surround LaTeX expressions with <code>$$</code>, and add <code>\large</code>
+                    or <code>\huge</code> to your LaTeX code to make it bigger!</span>
+                </p>
+                
+                
+                <div id="noht_highlighter_pane">
+                    <!-- Where the user will eventually make their annotations -->
+                </div>
+                
+                
+                <div class="form-row" id="noht_input_pane">
+                    <!-- Where the user enters the thing to be annotated -->
+                    <textarea class="form-control" id="noht_input_editor" rows="6"></textarea>
+                </div>
+                
+                
+                <div id="noht_preview_pane">
+                    <!-- Filled by JS with a copy of whatever the user enters -->
+                </div>
+                
+                
+                <div class="form-row" id="noht_submit_pane">
+                    <button type="button" class="btn btn-outline-secondary" id="advance_to_highlighter">Preview looks good! Now add highlights!</button>
+                    <button type="button" class="btn btn-outline-secondary" id="advance_to_annotator">Okay! Now let's add annotations!</button>
+                    <button type="button" class="btn btn-outline-secondary" id="advance_to_finalize">DONE! Download as PNG...</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
