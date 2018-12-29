@@ -33,6 +33,12 @@ Just a few simple steps:
 ### Explanation of the IRT 2-parameter model item response function
 ![alt text](https://s3-us-west-2.amazonaws.com/iamchriswalker.com/nohts_screenshots/noht_2pl.png)
 
+## Dependencies (with gratitude)
+
+* [MathJax 2.7.5](https://www.mathjax.org/)
+* [html2canvas 1.0.0-alpha.12](http://html2canvas.hertzen.com/)
+* [Bootstrap 4.1.3](https://getbootstrap.com/)
+* [JQuery 3.3.1](https://jquery.com/)
 
 ## Disclaimers
 
